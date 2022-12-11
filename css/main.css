@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-image: url(../assets/gradientbg.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --main-color: #2D2D2D;
+  --second-color: #1F1249;
+  --bg-color: #F5F7FFD9;
+}
+body .welcome,
+body .logged,
+body .register {
+  padding: 60px;
+  width: 70%;
+  background-color: var(--bg-color);
+  display: flex;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  body .welcome,
+body .logged,
+body .register {
+    flex-direction: column;
+    padding: 30px 60px;
+  }
+}
+@media (max-width: 576px) {
+  body .welcome,
+body .logged,
+body .register {
+    width: 90%;
+    padding: 20px;
+  }
+}
+body .welcome .welcome_Image_holder,
+body .welcome .logged_Image_holder,
+body .welcome .register_Image_holder,
+body .logged .welcome_Image_holder,
+body .logged .logged_Image_holder,
+body .logged .register_Image_holder,
+body .register .welcome_Image_holder,
+body .register .logged_Image_holder,
+body .register .register_Image_holder {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_Image_holder,
+body .welcome .logged_Image_holder,
+body .welcome .register_Image_holder,
+body .logged .welcome_Image_holder,
+body .logged .logged_Image_holder,
+body .logged .register_Image_holder,
+body .register .welcome_Image_holder,
+body .register .logged_Image_holder,
+body .register .register_Image_holder {
+    width: 100%;
+  }
+}
+body .welcome .welcome_Image_holder img,
+body .welcome .logged_Image_holder img,
+body .welcome .register_Image_holder img,
+body .logged .welcome_Image_holder img,
+body .logged .logged_Image_holder img,
+body .logged .register_Image_holder img,
+body .register .welcome_Image_holder img,
+body .register .logged_Image_holder img,
+body .register .register_Image_holder img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_Image_holder img,
+body .welcome .logged_Image_holder img,
+body .welcome .register_Image_holder img,
+body .logged .welcome_Image_holder img,
+body .logged .logged_Image_holder img,
+body .logged .register_Image_holder img,
+body .register .welcome_Image_holder img,
+body .register .logged_Image_holder img,
+body .register .register_Image_holder img {
+    height: 200px;
+    object-fit: contain;
+  }
+}
+body .welcome .welcome_content,
+body .welcome .logged_content,
+body .welcome .register_content,
+body .logged .welcome_content,
+body .logged .logged_content,
+body .logged .register_content,
+body .register .welcome_content,
+body .register .logged_content,
+body .register .register_content {
+  width: 50%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_content,
+body .welcome .logged_content,
+body .welcome .register_content,
+body .logged .welcome_content,
+body .logged .logged_content,
+body .logged .register_content,
+body .register .welcome_content,
+body .register .logged_content,
+body .register .register_content {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+body .welcome .welcome_content h1,
+body .welcome .logged_content h1,
+body .welcome .register_content h1,
+body .logged .welcome_content h1,
+body .logged .logged_content h1,
+body .logged .register_content h1,
+body .register .welcome_content h1,
+body .register .logged_content h1,
+body .register .register_content h1 {
+  color: var(--main-color);
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_content h1,
+body .welcome .logged_content h1,
+body .welcome .register_content h1,
+body .logged .welcome_content h1,
+body .logged .logged_content h1,
+body .logged .register_content h1,
+body .register .welcome_content h1,
+body .register .logged_content h1,
+body .register .register_content h1 {
+    font-size: 42px;
+  }
+}
+body .welcome .welcome_content h2,
+body .welcome .logged_content h2,
+body .welcome .register_content h2,
+body .logged .welcome_content h2,
+body .logged .logged_content h2,
+body .logged .register_content h2,
+body .register .welcome_content h2,
+body .register .logged_content h2,
+body .register .register_content h2 {
+  color: var(--main-color);
+  font-size: 42px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_content h2,
+body .welcome .logged_content h2,
+body .welcome .register_content h2,
+body .logged .welcome_content h2,
+body .logged .logged_content h2,
+body .logged .register_content h2,
+body .register .welcome_content h2,
+body .register .logged_content h2,
+body .register .register_content h2 {
+    font-size: 34px;
+  }
+}
+body .welcome .welcome_content h3,
+body .welcome .logged_content h3,
+body .welcome .register_content h3,
+body .logged .welcome_content h3,
+body .logged .logged_content h3,
+body .logged .register_content h3,
+body .register .welcome_content h3,
+body .register .logged_content h3,
+body .register .register_content h3 {
+  color: var(--main-color);
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_content h3,
+body .welcome .logged_content h3,
+body .welcome .register_content h3,
+body .logged .welcome_content h3,
+body .logged .logged_content h3,
+body .logged .register_content h3,
+body .register .welcome_content h3,
+body .register .logged_content h3,
+body .register .register_content h3 {
+    font-size: 26px;
+  }
+}
+body .welcome .welcome_content p,
+body .welcome .logged_content p,
+body .welcome .register_content p,
+body .logged .welcome_content p,
+body .logged .logged_content p,
+body .logged .register_content p,
+body .register .welcome_content p,
+body .register .logged_content p,
+body .register .register_content p {
+  color: var(--second-color);
+  font-size: 24px;
+  line-height: 160%;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_content p,
+body .welcome .logged_content p,
+body .welcome .register_content p,
+body .logged .welcome_content p,
+body .logged .logged_content p,
+body .logged .register_content p,
+body .register .welcome_content p,
+body .register .logged_content p,
+body .register .register_content p {
+    font-size: 16px;
+  }
+}
+body .welcome .welcome_content p.logged_email,
+body .welcome .logged_content p.logged_email,
+body .welcome .register_content p.logged_email,
+body .logged .welcome_content p.logged_email,
+body .logged .logged_content p.logged_email,
+body .logged .register_content p.logged_email,
+body .register .welcome_content p.logged_email,
+body .register .logged_content p.logged_email,
+body .register .register_content p.logged_email {
+  text-decoration: underline;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_content p.logged_email,
+body .welcome .logged_content p.logged_email,
+body .welcome .register_content p.logged_email,
+body .logged .welcome_content p.logged_email,
+body .logged .logged_content p.logged_email,
+body .logged .register_content p.logged_email,
+body .register .welcome_content p.logged_email,
+body .register .logged_content p.logged_email,
+body .register .register_content p.logged_email {
+    margin: 0;
+  }
+}
+body .welcome .welcome_content p.register_content_p,
+body .welcome .logged_content p.register_content_p,
+body .welcome .register_content p.register_content_p,
+body .logged .welcome_content p.register_content_p,
+body .logged .logged_content p.register_content_p,
+body .logged .register_content p.register_content_p,
+body .register .welcome_content p.register_content_p,
+body .register .logged_content p.register_content_p,
+body .register .register_content p.register_content_p {
+  font-size: 20px;
+  line-height: 115%;
+}
+body .welcome .welcome_content a,
+body .welcome .logged_content a,
+body .welcome .register_content a,
+body .logged .welcome_content a,
+body .logged .logged_content a,
+body .logged .register_content a,
+body .register .welcome_content a,
+body .register .logged_content a,
+body .register .register_content a {
+  text-decoration: none;
+  background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 18px #9CADF2;
+  transition: 0.3s;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  body .welcome .welcome_content a,
+body .welcome .logged_content a,
+body .welcome .register_content a,
+body .logged .welcome_content a,
+body .logged .logged_content a,
+body .logged .register_content a,
+body .register .welcome_content a,
+body .register .logged_content a,
+body .register .register_content a {
+    font-size: 16px;
+  }
+}
+body .welcome .welcome_content a:hover,
+body .welcome .logged_content a:hover,
+body .welcome .register_content a:hover,
+body .logged .welcome_content a:hover,
+body .logged .logged_content a:hover,
+body .logged .register_content a:hover,
+body .register .welcome_content a:hover,
+body .register .logged_content a:hover,
+body .register .register_content a:hover {
+  filter: grayscale(25%);
+}
+body .welcome .register_content,
+body .logged .register_content,
+body .register .register_content {
+  padding: 20px 30px;
+  text-align: center;
+  justify-content: space-between;
+}
+body .welcome .register_content h3,
+body .logged .register_content h3,
+body .register .register_content h3 {
+  margin: 10px 0;
+}
+body .welcome .register_content form .form-group,
+body .logged .register_content form .form-group,
+body .register .register_content form .form-group {
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 8px 20px;
+  border: 1px solid #DBE3FF;
+  border-radius: 10px;
+  display: flex;
+}
+body .welcome .register_content form .form-group .input_desc,
+body .logged .register_content form .form-group .input_desc,
+body .register .register_content form .form-group .input_desc {
+  width: 15%;
+  color: #DBE3FF;
+  position: relative;
+}
+body .welcome .register_content form .form-group .input_desc::after,
+body .logged .register_content form .form-group .input_desc::after,
+body .register .register_content form .form-group .input_desc::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #DBE3FF;
+  right: 0;
+}
+body .welcome .register_content form .form-group input,
+body .logged .register_content form .form-group input,
+body .register .register_content form .form-group input {
+  padding-left: 10px;
+  width: 85%;
+  border: none;
+  outline: none;
+  caret-color: #888;
+  color: #3B3B3B;
+}
+body .welcome .register_content form .form-group ::placeholder,
+body .logged .register_content form .form-group ::placeholder,
+body .register .register_content form .form-group ::placeholder {
+  color: #3B3B3B;
+}
+body .welcome .register_content form button,
+body .logged .register_content form button,
+body .register .register_content form button {
+  text-decoration: none;
+  background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 18px #9CADF2;
+  transition: 0.3s;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+@media (max-width: 991px) {
+  body .welcome .register_content form button,
+body .logged .register_content form button,
+body .register .register_content form button {
+    font-size: 16px;
+  }
+}
+body .welcome .register_content form button:hover,
+body .logged .register_content form button:hover,
+body .register .register_content form button:hover {
+  filter: grayscale(25%);
+}
+body .welcome .register_content form .input_error,
+body .logged .register_content form .input_error,
+body .register .register_content form .input_error {
+  margin: 0;
+  font-size: 15px;
+  display: none;
+  transition: 0.1s;
+  pointer-events: none;
+  color: #f00;
+}/*# sourceMappingURL=main.css.map */
